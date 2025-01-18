@@ -21,19 +21,28 @@ This project provides a locally hosted solution for answering queries from uploa
    cd locally-running-llm-to-answer-queries-from-uploaded-pdf
    ```
 
-2. **Create and Activate a Virtual Environment**:
+2. **Install Ollama**:
+   Follow the [Ollama installation guide](https://ollama.ai) to install Ollama on your system.
+
+3. **Create and Activate a Virtual Environment**:
    ```bash
    python -m venv venv
    source venv/bin/activate       # For Linux/Mac
    venv\Scripts\activate          # For Windows
    ```
 
-3. **Install Dependencies**:
+4. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Add Files**:
+5. **Pull Llama Model**:
+   Use Ollama to pull the Llama 3 model:
+   ```bash
+   ollama pull llama3
+   ```
+
+6. **Add Files**:
    Place your PDF files into the `data/` folder for processing.
 
 ## Usage
@@ -59,7 +68,6 @@ python bot.py
 
 ## Contributing
 Contributions are welcome! Please feel free to fork this repository, submit issues, or create pull requests.
-
 
 
 Feel free to share feedback or report issues in the [issues section](https://github.com/Adithyanb/locally-running-llm-to-answer-queries-from-uploaded-pdf/issues).
