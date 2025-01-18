@@ -56,27 +56,11 @@ To start the query bot, execute:
 python bot.py
 ```
 
-## Folder Structure
-```
-.
-├── data/                     # Directory to store uploaded PDF files
-├── bot.py                    # Main script to run the query bot
-├── populate_database.py      # Script to populate or reset the database
-├── requirements.txt          # Dependencies for the project
-└── README.md                 # Project documentation
-```
 
 ## Contributing
 Contributions are welcome! Please feel free to fork this repository, submit issues, or create pull requests.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
 
-## Acknowledgements
-- Thanks to the open-source community for inspiring this project.
-- Special thanks to contributors for making this possible.
-
----
 
 Feel free to share feedback or report issues in the [issues section](https://github.com/Adithyanb/locally-running-llm-to-answer-queries-from-uploaded-pdf/issues).
 
