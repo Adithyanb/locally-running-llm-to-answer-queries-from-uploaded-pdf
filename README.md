@@ -19,30 +19,64 @@ This project provides a locally hosted solution for answering queries from uploa
    ```bash
    git clone https://github.com/Adithyanb/locally-running-llm-to-answer-queries-from-uploaded-pdf.git
    cd locally-running-llm-to-answer-queries-from-uploaded-pdf
-Create and Activate a Virtual Environment:
+   ```
 
-bash
-python -m venv venv
-source venv/bin/activate       # For Linux/Mac
-venv\Scripts\activate          # For Windows
+2. **Create and Activate a Virtual Environment**:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate       # For Linux/Mac
+   venv\Scripts\activate          # For Windows
+   ```
 
-Install Dependencies:
-bash
-pip install -r requirements.txt
-Add Files: Place your PDF files into the data/ folder for processing.
+3. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Usage
-Reset the Database
+4. **Add Files**:
+   Place your PDF files into the `data/` folder for processing.
+
+## Usage
+
+### Reset the Database
 To reset the database and clear all existing data, run:
-bash
+```bash
 python populate_database.py --reset
-Update the Database
+```
 
+### Update the Database
 To manually update the database without clearing it, use:
-bash
+```bash
 python populate_database.py
+```
 
+### Run the Bot
 To start the query bot, execute:
-
-bash
+```bash
 python bot.py
+```
+
+## Folder Structure
+```
+.
+├── data/                     # Directory to store uploaded PDF files
+├── bot.py                    # Main script to run the query bot
+├── populate_database.py      # Script to populate or reset the database
+├── requirements.txt          # Dependencies for the project
+└── README.md                 # Project documentation
+```
+
+## Contributing
+Contributions are welcome! Please feel free to fork this repository, submit issues, or create pull requests.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgements
+- Thanks to the open-source community for inspiring this project.
+- Special thanks to contributors for making this possible.
+
+---
+
+Feel free to share feedback or report issues in the [issues section](https://github.com/Adithyanb/locally-running-llm-to-answer-queries-from-uploaded-pdf/issues).
+
